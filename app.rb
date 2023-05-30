@@ -2,12 +2,18 @@ require 'sinatra/base'
 require 'sinatra/reloader'
 
 class Application < Sinatra::Base
-
-  get '/hello' do
-    name = params[:name]
-
-    return "hello #{name}"
+  configure :development do
+    register Sinatra::Reloader
   end
+
+  post '/sort-names' do
+    names = params[:names]
+    list_of_names = names.split(',').sort.join(',')
+
+    list_of_names
+  end
+end
+
 
 #   get '/posts' do
 #     name = params[:name]
@@ -25,7 +31,5 @@ class Application < Sinatra::Base
   
 #     # This allows the app code to refresh
 #   # without having to restart the server.
-  configure :development do
-    register Sinatra::Reloader
-  end
-end
+ 
+# end
