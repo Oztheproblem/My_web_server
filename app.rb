@@ -5,7 +5,7 @@ class Application < Sinatra::Base
 
   get '/hello' do
     name = params[:name]
-    
+
     return "hello #{name}"
   end
 
@@ -16,7 +16,6 @@ class Application < Sinatra::Base
 #     return "Hello #{name}, you are in the #{cohort_name} cohort 2023."
 #   end
   
- 
 #   post '/posts/submit' do
 #     name = params[:name]
 #     message = params[:message]

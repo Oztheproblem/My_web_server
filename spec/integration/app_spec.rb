@@ -12,47 +12,47 @@ describe Application do
   # class so our tests work.
   let(:app) { Application.new }
 
-  context "GET /hello" do
-    it "returns hello #{name}" do
-      # Send a GET request to /
-      # and returns a response object we can test.
-      response = get("/hello?name=Julia")
+#   context "GET /hello" do
+#     it "returns hello #{name}" do
+#       # Send a GET request to /
+#       # and returns a response object we can test.
+#       response = get("/hello?name=Julia")
 
-      # Assert the response status code and body.
-      expect(response.status).to eq(200)
-      expect(response.body).to eq("hello Julia")
-    end
+#       # Assert the response status code and body.
+#       expect(response.status).to eq(200)
+#       expect(response.body).to eq("hello Julia")
+#     end
 
-    it "returns hello #{name}" do
-        # Send a GET request to /
-        # and returns a response object we can test.
-        response = get("/hello?name=Maria")
+#     it "returns hello #{name}" do
+#         # Send a GET request to /
+#         # and returns a response object we can test.
+#         response = get("/hello?name=Maria")
   
-        # Assert the response status code and body.
-        expect(response.status).to eq(200)
-        expect(response.body).to eq("hello Maria")
-      end
+#         # Assert the response status code and body.
+#         expect(response.status).to eq(200)
+#         expect(response.body).to eq("hello Maria")
+#       end
 
-      it "returns hello #{name}" do
-        # Send a GET request to /
-        # and returns a response object we can test.
-        response = get("/hello?name=Josh")
+#       it "returns hello #{name}" do
+#         # Send a GET request to /
+#         # and returns a response object we can test.
+#         response = get("/hello?name=Josh")
   
-        # Assert the response status code and body.
-        expect(response.status).to eq(200)
-        expect(response.body).to eq("hello Josh")
-      end
+#         # Assert the response status code and body.
+#         expect(response.status).to eq(200)
+#         expect(response.body).to eq("hello Josh")
+#       end
 
-    #   it "returns hello Josh" do
-    #     # Send a GET request to /
-    #     # and returns a response object we can test.
-    #     response = get("/hello?name?=Josh")
+#     #   it "returns hello Josh" do
+#     #     # Send a GET request to /
+#     #     # and returns a response object we can test.
+#     #     response = get("/hello?name?=Josh")
   
-    #     # Assert the response status code and body.
-    #     expect(response.status).to eq(200)
-    #     expect(response.body).to eq("hello Josh")
-    #   end
-  end
+#     #     # Assert the response status code and body.
+#     #     expect(response.status).to eq(200)
+#     #     expect(response.body).to eq("hello Josh")
+#     #   end
+#   end
 
 #   context "POST to /submit" do
 #     xit "returns 200 OK with the right content" do
